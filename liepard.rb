@@ -1,5 +1,7 @@
+#http://bulbapedia.bulbagarden.net/wiki/Liepard_(Pok%C3%A9mon)
 class Liepard
-    attr_accessor :type, :abilities, :hp, :attack, :defense, :speed, :level, :exp
+    attr_accessor :abilities, :hp, :attack, :defense, :speed, :level, :exp
+    attr_reader :type
 
     LEARNSET = {
         "Scratch" => 0,
@@ -25,6 +27,7 @@ class Liepard
         @name = name
         @gender = gender
         @abilities = ["Limber or Unburden", "Prankster"]
+        @type = "Dark"
         @hp = 64 #stats base stats
         @attack = 88 #stats base stats
         @defense = 50 #stats base stats

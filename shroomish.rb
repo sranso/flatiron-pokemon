@@ -1,5 +1,7 @@
+#http://bulbapedia.bulbagarden.net/wiki/Shroomish_(Pok%C3%A9mon)
 class Shroomish
-    attr_accessor :type, :abilities, :hp, :attack, :defense, :speed, :level, :exp
+    attr_accessor :abilities, :hp, :attack, :defense, :speed, :level, :exp
+    attr_reader :type
 
     LEARNSET = {
         "Double-Edge" => 0,
@@ -14,6 +16,7 @@ class Shroomish
         @name = name
         @gender = gender
         @abilities = ["Effect Spore or Poison Heal", "Quick Feet"]
+        @type = "Grass"
         @hp = 60 #stats base stats
         @attack = 40 #stats base stats
         @defense = 60 #stats base stats

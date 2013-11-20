@@ -1,5 +1,7 @@
+#http://bulbapedia.bulbagarden.net/wiki/Wigglytuff_(Pok%C3%A9mon)
 class Wigglytuff
-    attr_accessor :type, :abilities, :hp, :attack, :defense, :speed, :level, :exp
+    attr_accessor :abilities, :hp, :attack, :defense, :speed, :level, :exp
+    attr_reader :type
 
     LEARNSET = { #learnset
         "Double-Edge" => 0,
@@ -14,6 +16,7 @@ class Wigglytuff
         @name = name #user input
         @gender = gender #user input
         @abilities = ["Cute Charm", "Competitive", "Frisk"] #top
+        @type = ["Normal", "Fairy"]
         @hp = 140 #stats base stats
         @attack = 70 #stats base stats
         @defense = 45 #stats base stats
