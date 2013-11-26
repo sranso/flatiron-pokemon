@@ -1,7 +1,6 @@
-#http://bulbapedia.bulbagarden.net/wiki/Wigglytuff_(Pok%C3%A9mon)
-class Wigglytuff
+class Pokemon
     # attr_accessor :abilities, :hp, :attack, :defense, :speed, :level, :exp
-    # attr_reader :type
+    attr_accessor :name
 
     # LEARNSET = { #learnset
     #     "Double-Edge" => 0,
@@ -24,7 +23,7 @@ class Wigglytuff
     end
 
     def say_name
-        "Wigglytuff!"
+        "#{name}"
     end
 
 end
